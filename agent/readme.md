@@ -28,3 +28,12 @@ class ComplexAgentState(TypedDict):
     agent_outcome: Union[AgentAction, AgentFinish, None]
     intermediate_steps: Annotated[list[tuple[AgentAction, str]], operator.add]
 ```
+
+## Models Evaluation
+
+### Funcall
+
++ chatgpt o1-mini can call funcall 2 times, and return the response correctly
++ deepseek can call funcall 2 times, but need delete tools after have called
++ glm can only call funcall 1 times for one city, and need delete tools after have called too.
++ stepfun can call funcall by correct name.

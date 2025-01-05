@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "comfyui-image-selectors"
+version = "0.1.0"
+description = "a test custom node for comfyui"
+authors = ["Lian <bjliany@gmail.com>"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
